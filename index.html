@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        .x{
+            text-align: center;
+            color: rgb(88, 111, 187);
+            font-size:32px;
+        }
+        p{
+            text-align: left;
+            font-size: 20px;
+            font-family: system-ui;
+        }
+        p.top{
+            text-align: left;
+            font-style: italic;
+            font-size: 25px;
+            color: rgb(43, 207, 52);
+        }
+        .bg{
+            background-color: darkgray;
+            padding: 2%;
+            margin: 1%;
+            font-size: 15px;
+            float: left;  /* So that the div element doesn't take whole line */
+        }
+    </style>
+    <body>
+        <h1 style=" text-align: center; color:rgba(206, 40, 40, 0.781); font-size:32px;">  This is a heading with inline css  </h1>
+        <h1 class="x">  This is a heading with internal css  </h1>
+        <h1 class="x2">  This is a heading with external css  </h1>
+        <p>This is paragraph 1 without any class and uses internal css </p>
+        <p class="top">This is paragraph 2 with class named top and uses internal css </p>
+        <p style="color: cyan;">This is paragraph 3 without any class and uses inline css </p>
+        <div class="bg">
+            This is a div tag to display background colour and uses internal css
+        </div>
+
+        <br> <br> <br> <br>
+        <h1 style="text-align: center;">Form</h1>
+        <fieldset>
+            <table border="1">
+                <legend>Your details: </legend>
+                <form action="#">
+                    <tr>
+                        <td>
+                            <label for="name" >Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="comment">Comment:</label>
+                        </td>
+                        <td>
+                            <textarea id="comment" name="comment" rows="4" cols="50">
+                                </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </fieldset>
+    </body>
+</html>
